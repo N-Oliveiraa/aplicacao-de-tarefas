@@ -8,17 +8,15 @@ import { TaskProvider } from './context/TaskContext';
 
 
 function App() {
-  
+
   return (
     <>
-    <Router>
       <TaskProvider>
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/add-task" element={<AddTask />} />
         </Routes>
       </TaskProvider>
-    </Router>
     </>
   )
 }
